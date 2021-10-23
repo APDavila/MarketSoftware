@@ -1,0 +1,26 @@
+
+						<div class="table-responsive">
+							<table id="userList" class="table table-bordered table-hover table-striped">
+								<thead class="thead-light">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Valor</th>
+									<th scope="col">Activo</th>									
+									<th scope="col"></th>
+									<th></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr th:each="venta: ${transaccionList}">									
+									<td th:text="${venta.id}"></td>
+									<td th:text="${venta.valor}"></td>
+									<td th:text="${venta.esta_activo}"></td>									
+									<td>
+										<a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+				

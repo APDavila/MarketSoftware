@@ -1,0 +1,27 @@
+
+						<div class="table-responsive">
+							<table id="userList" class="table table-bordered table-hover table-striped">
+								<thead class="thead-light">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Detalle</th>
+									<th scope="col">Activo</th>									
+									<th></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr th:each="producto: ${productoList}">									
+									<td th:text="${producto.id}"></td>
+									<td th:text="${producto.nombre}"></td>
+									<td th:text="${producto.detalle}"></td>
+									<td th:text="${producto.esta_activo}"></td>
+									<td>
+										<a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+				
